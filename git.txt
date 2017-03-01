@@ -1,0 +1,20 @@
+This is version 1
+$git init
+$git add gitPractice.exe
+$git commit -m "This is the initial copy"
+
+--Change the git account user and email:
+ $git config --global user.name "simondi"
+ $git config --global user.email simondi88@hotmail.com
+ $git commit --amend --reset-author
+ 
+ Check the change by issuing the command
+ $git log
+ 
+ Go back to the former commit
+ $git reset --hard HEAD^
+ 
+ $git diff HEAD -- git1.txt 
+ 
+ 
+ 
