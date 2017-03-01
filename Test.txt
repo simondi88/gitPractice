@@ -29,6 +29,8 @@ $ssh-keygen -t rsa -C "simondi88@hotmail.com"
 Establish connection to remote which is created on gitHub web site
 $git remote add origin https://github.com/simondi88/gitPractice.git
 
+$git clone https://github.com/simondi88/gitPractice.git
+
 $git pull https://github.com/simondi88/gitPractice.git
 
 Push the master to the oprigin:
@@ -36,6 +38,19 @@ $git push -u origin master
 
 To solve the problem of: git refusing to merge unrelated histories. use the following:
 $git pull origin master --allow-unrelated-histories
+
+Branch: Commands:
+????:git branch
+
+????:git branch <name>
+
+????:git checkout <name>
+
+??+????:git checkout -b <name>
+
+??????????:git merge <name>
+
+????:git branch -d <name>
 
  
  
