@@ -1,7 +1,12 @@
 This is version 1
 $git init
-$git add gitPractice.exe
+$git add gitPractice.txt
 $git commit -m "This is the initial copy"
+
+add the -a or --all flag to the end of the command. 
+that will tell git to to check for changed files and any with changes should be comitted.
+$git commit -a -m "This is the initial copy"
+
 
 --Change the git account user and email:
  $git config --global user.name "simondi"
@@ -10,11 +15,27 @@ $git commit -m "This is the initial copy"
  
  Check the change by issuing the command
  $git log
- 
- Go back to the former commit
- $git reset --hard HEAD^
- 
- $git diff HEAD -- git1.txt 
- 
+
+Restore the file from the depository:
+This is useful when the file is deleted or modified.
+$git checkout -- gitPractice.txt
+
+Type :q OR Ctrl q, OR Ctrl C to exist $git log command
+
+git config --list
+
+$ssh-keygen -t rsa -C "simondi88@hotmail.com"
+
+Establish connection to remote which is created on gitHub web site
+$git remote add origin https://github.com/simondi88/gitPractice.git
+
+$git pull https://github.com/simondi88/gitPractice.git
+
+Push the master to the oprigin:
+$git push -u origin master
+
+To solve the problem of: git refusing to merge unrelated histories. use the following:
+$git pull origin master --allow-unrelated-histories
+
  
  
